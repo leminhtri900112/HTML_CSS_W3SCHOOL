@@ -1,0 +1,575 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#main {
+    
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.nav {
+
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-item__link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #ffff;
+    line-height: 46px;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+.nav-item:hover  {
+    background-color: #CCCCCC;
+}
+
+.nav-item:hover .nav-item__link {
+    color: #000;
+} 
+
+/* Subnavbar */
+
+.subnav {
+    position: absolute;
+    background-color: #ffff;
+    min-width: 150px;
+    list-style: none;
+    display: none;
+    box-shadow: 0px 0px 10px rgb(161, 161, 161);
+
+}
+
+.nav-item:last-child:hover .subnav  {
+    display: block;
+}
+
+.subnav-item {
+
+}
+
+.subnav-item__link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #000;
+    display: block;
+    padding: 10px 2px 8px 16px;
+}
+
+.subnav-item__link:hover {
+    background-color: #CCCCCC;
+}
+
+.search-button {
+    font-size: 1.6rem;
+    
+    color: #ffff;
+    padding: 0 25px;
+    line-height: 46px;
+}
+
+.search-button:hover {
+    background-color: #f44336;
+}
+
+/* Header mobile */
+.mobile-home {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    display: none;
+}
+
+.mobile-home__icon-list {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    display: none;
+    width: 46px;
+    text-align: center;
+    display: none;
+    
+}
+
+.mobile-home__icon-list i {
+    display: block;
+    line-height: 46px;
+}
+
+.mobile-home__check:checked ~ .mobile-home__list {
+    display: block;
+
+}
+
+.mobile-home__check:checked ~ .mobile-home__icon-list {
+    background-color: #ccc;
+}
+
+.mobile-home__list {
+    list-style: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 46px;
+    background-color: #000;
+    display: none;
+    
+}
+
+.mobile-home__item {
+    
+}
+
+.mobile-home__link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    color: #fff;
+    /* padding: 14px 0; */
+    padding-left: 18px;
+
+}
+
+
+/* Slider */
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background-color: #333;
+    background: url(/assets/img/chicago.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+.text-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-heading {
+    font-size: 2.4rem;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.text-decription {
+    font-size: 1.6rem;
+    color: #ffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Content */
+#content {
+
+}
+
+.section-content {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.section-heading {
+    font-size: 3.0rem;
+    color: #000;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.section-subheading {
+    font-size: 1.5rem;
+    color: #000;
+    opacity: 0.6;
+    text-align: center;
+    margin: 16px 0;
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 16px 0;
+    text-align: justify;
+}
+
+.member-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0;
+}
+
+.member-item {
+    flex: 1;
+    text-align: center;
+
+}
+
+.member-item-table {
+    text-align: center;
+}
+
+.member-name {
+    font-size: 1.6rem;
+    color: #000;
+    margin: 15px 0;
+}
+
+.member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* TOUR DATES */
+
+.tour-section {
+    background-color: #000;
+}
+
+.text-color {
+    color:#ffff;
+}
+
+.tickets-list {
+    background-color: #ffff;
+    font-size: 1.6rem;
+}
+
+.tickets-item {
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.soid-out {
+    margin-left: 20px;
+    padding: 3px 10px;
+    background-color: #f44336;
+    color: #ffff;
+}
+
+.number {
+    color: #ffff;
+    font-size: 1.6rem;
+    padding: 0 8px;
+    background-color: #000;
+    border-radius: 50%;
+    line-height: 1.5;
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+/* Place */
+
+.place-list {
+    padding: 38px 0;
+    margin: 0 -5.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.place-item {
+    background-color: #000;
+    width: calc(100%/3);
+
+} 
+
+.place-img {
+    display: block;
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.place-body {
+    width: 245px;
+    padding: 0 16px;
+    font-size: 1.6rem;
+    color: #000;
+    background-color: #ffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.place-heading {
+    padding-top: 16px;
+    font-size: 1.6rem;
+}
+
+.place-time {
+    margin: 16px 0;
+    opacity: 0.6;
+}
+
+.place-description {
+    margin: 16px 0;
+}
+
+.place-buy-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #ffff;
+    background-color: #000;
+    text-decoration: none;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #CCCCCC;
+}
+
+
+ .modal {
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.151);
+     align-items: center;
+     justify-content: center;
+     display: none;
+     /* display: flex; */
+ }
+
+ .modal.js-modal-open {
+     display: flex;
+ }
+
+ @keyframes madaFadein {
+     from{
+        transform: translateY(-200px);
+        opacity: 0;
+     }
+     to {
+        transform: translateY(0px);
+        opacity: 1;
+
+     }
+ }
+
+ .modal-container {
+     width: 900px;
+     /* height: 340px; */
+     background-color: #ffff;
+     position: relative;
+     animation: madaFadein ease-in 0.2s ;
+ }
+
+ .modal-close {
+     position: absolute;
+     font-size: 1.6rem;
+     color:#ffff;
+     top: 0px;
+     right: 0px;
+     padding: 14px 18px;
+ }
+
+ .modal-close:hover {
+    color:#000;
+    background-color: #ccc;
+ }
+ .modal-heading {
+     font-size: 3rem;
+     background-color:  #009688;
+     text-align: center;
+     color: #ffff;
+     letter-spacing: 4px;
+     padding: 50px 0;
+ }
+
+ .modal-body {
+     padding: 0 16px;
+ }
+
+ .modal-lable {
+     font-size: 1.6rem;
+     color: #000;
+     display: block;
+     margin: 16px 0;
+ }
+
+ .modal-input {
+     height: 40px;
+     padding: 8px;
+     font-size: 1.5rem;
+     width: 100%;
+     border: 1px solid #ccc;
+ }
+
+ .modal-button-pay {
+     font-size: 1.6rem;
+     color: #ffff;
+     margin: 16px 0;
+     height: 54px;
+     width: 100%;
+     background-color: #009688;
+     border: none;
+ }
+
+ .modal-button-pay:hover {
+    color: #000;
+    background-color: #CCCCCC;
+}
+
+ .modal-button-pay i {
+     margin: 0 2px;
+ }
+
+ .modal-button-close {
+     margin: 16px 0;
+     padding: 10px 18px;
+     background-color: #f44336;
+     color: #ffff;
+     font-size: 1.5rem;
+     border: none;
+ }
+
+ .modal-button-close:hover {
+    background-color: #CCCCCC;
+    color: #000;
+ }
+
+ .modal-help {
+     font-size: 1.6rem;
+     color: #000;
+     float: right;
+     margin-top: 14px;
+ }
+
+ .modal-help a{
+     color: cornflowerblue;
+ }
+
+ /* CONTACT */
+
+ .section-about {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+ }
+ .info-contact {
+    font-size: 1.8rem;
+    padding: 4px 0;
+ }
+
+ .info-contact i {
+     width: 24px;
+     display: inline-block;
+     margin-right: 20px;
+     text-align: center;
+ }
+
+ .form-input {
+     font-size: 1.6rem;
+     padding: 10px;
+     border: 1px solid #ccc;
+ }
+
+ .form-top__name {
+     /* width: 50%; */
+     margin-right: 5px;
+ }
+
+ .form-top__email {
+    /* width: 50%; */
+    margin-left: 5px;
+ }
+
+.form-bottom {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-submit {
+    float: right;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #ffff;
+    padding: 12px;
+    border: none;
+}
+
+.form-submit:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* MAP */
+.map img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 0;
+    background-color: #f1f1f1;
+}
+
+.social {
+    text-align: center;
+   
+}
+
+.social-link {
+    font-size: 1.8rem;
+    color: #696969;
+    margin: 1px;
+}
+
+.social-link:hover {
+    color: #afaeae;
+}
+
+.footer-about {
+    font-size: 1.6rem;
+    color: #696969;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-about a {
+    color: #696969;
+}
